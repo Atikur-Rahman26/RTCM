@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rtcm.Welcome">
+   <children>
+      <AnchorPane fx:id="welcomePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="980.0">
+         <children>
+            <AnchorPane layoutY="549.0" prefHeight="51.0" prefWidth="980.0" style="-fx-background-color: #244991;">
+               <children>
+                  <Label fx:id="railwayText" blendMode="SOFT_LIGHT" layoutX="159.0" prefHeight="51.0" prefWidth="730.0" text="Railway Ticket Counter Management" textFill="#97acc7">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="44.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="554.0" fitWidth="980.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/welcome_RtCM.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="332.0" layoutY="42.0" prefHeight="192.0" prefWidth="283.0">
+               <children>
+                  <Label fx:id="rtcm" blendMode="ADD" cache="true" graphicTextGap="6.0" layoutX="14.0" prefHeight="96.0" prefWidth="286.0" text="RTCM">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="95.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.10227275617194898">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.6428571428571428">
+                                 <color>
+                                    <Color red="0.5575900077819824" green="0.7400000095367432" blue="0.3625999987125397" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.7417582417582418">
+                                 <color>
+                                    <Color red="0.5575900077819824" green="0.7400000095367432" blue="0.3625999987125397" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Circle fx:id="circle" fill="DODGERBLUE" layoutX="490.0" layoutY="258.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="login" layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="978.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="54.0" prefWidth="978.0" style="-fx-background-color: #191052;" AnchorPane.bottomAnchor="550.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="exit" fitHeight="33.0" fitWidth="26.0" layoutX="950.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/exit.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="minimize" fitHeight="19.0" fitWidth="19.0" layoutX="920.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/minimize.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="402.0" layoutY="-4.0" prefHeight="26.0" prefWidth="246.0" text="RTCM" textFill="#c79797">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="42.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #556bbd;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <JFXButton contentDisplay="TOP" layoutX="243.0" layoutY="151.0" onAction="#Admin" prefHeight="163.0" prefWidth="164.0" style="-fx-background-color: white;" text="Admin" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <graphic>
+                        <ImageView fitHeight="125.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Admin.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton contentDisplay="TOP" layoutX="563.0" layoutY="151.0" onAction="#userLogin" prefHeight="163.0" prefWidth="164.0" style="-fx-background-color: white;" text="User" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                     <graphic>
+                        <ImageView fitHeight="125.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/userImage.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Label layoutX="376.0" layoutY="67.0" prefHeight="28.0" prefWidth="176.0" text="Log in as" textFill="#dae3ec">
+                     <font>
+                        <Font name="System Bold Italic" size="37.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

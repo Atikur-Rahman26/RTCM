@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rtcm.EditProfile">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="50.0" prefWidth="980.0" style="-fx-background-color: #031838;" AnchorPane.bottomAnchor="550.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="minimize" fitHeight="18.0" fitWidth="22.0" layoutX="909.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/minimize.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="exit" fitHeight="22.0" fitWidth="23.0" layoutX="944.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/exit.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="7.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #717982;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Label layoutX="345.0" layoutY="10.0" prefHeight="50.0" prefWidth="341.0" text="Edit Profile" textFill="#dcbdbd" underline="true">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="62.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="115.0" prefHeight="40.0" prefWidth="136.0" text="Name    :">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="219.0" prefHeight="50.0" prefWidth="153.0" text="Date of Birth    :">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="288.0" prefHeight="40.0" prefWidth="136.0" text="District    :">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="345.0" prefHeight="40.0" prefWidth="136.0" text="Upzilla    :">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="169.0" prefHeight="40.0" prefWidth="136.0" text="Email    :">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="84.0" layoutY="409.0" prefHeight="50.0" prefWidth="153.0" text="Station :" textFill="#58a5f2" underline="true">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="896.0" layoutY="511.0" onAction="#save" prefHeight="33.0" prefWidth="78.0" style="-fx-background-color: #521f8c;" text="Save" textFill="#42aaff">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="803.0" layoutY="511.0" onAction="#canCel" style="-fx-background-color: #521f8c;" text="Cancel" textFill="#42aaff">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="name" layoutX="339.0" layoutY="111.0" prefHeight="40.0" prefWidth="460.0" promptText="name" />
+            <TextField fx:id="email" layoutX="339.0" layoutY="166.0" prefHeight="40.0" prefWidth="460.0" promptText="email" />
+            <TextField fx:id="dateofbirth" layoutX="340.0" layoutY="224.0" prefHeight="40.0" prefWidth="460.0" promptText="dateofBirth" />
+            <TextField fx:id="district" layoutX="340.0" layoutY="287.0" prefHeight="40.0" prefWidth="460.0" promptText="district" />
+            <TextField fx:id="upzilla" layoutX="341.0" layoutY="347.0" prefHeight="40.0" prefWidth="460.0" promptText="upzilla" />
+            <TextField fx:id="station" layoutX="340.0" layoutY="413.0" prefHeight="40.0" prefWidth="460.0" promptText="station" />
+            <JFXButton layoutX="27.0" layoutY="511.0" onAction="#canCel" style="-fx-background-color: #521f8c;" text="Back" textFill="#42aaff">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

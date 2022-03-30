@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rtcm.TrainSchedule">
+   <children>
+      <ImageView blendMode="ADD" fitHeight="546.0" fitWidth="548.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="434.0" AnchorPane.topAnchor="50.0">
+         <image>
+            <Image url="@image/time_table.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="50.0" prefWidth="980.0" style="-fx-background-color: #031838;" AnchorPane.bottomAnchor="550.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="DrawerImage" fitHeight="29.0" fitWidth="31.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/threebar.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="minimize" fitHeight="18.0" fitWidth="22.0" layoutX="973.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/minimize.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="exit" fitHeight="29.0" fitWidth="24.0" layoutX="1007.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/exit.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="79.0" layoutY="110.0" text="Train Name:" textFill="#7f7fb5">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView blendMode="ADD" fitHeight="546.0" fitWidth="548.0" layoutX="499.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/time_table.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="79.0" layoutY="164.0" text="Departure Station:" textFill="#7f7fb5">
+         <font>
+            <Font name="Times New Roman Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="221.0" text="Destination Station:" textFill="#7f7fb5">
+         <font>
+            <Font name="Times New Roman Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="278.0" text="Departure Time :" textFill="#7f7fb5">
+         <font>
+            <Font name="Times New Roman Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="336.0" text="Destination Time :" textFill="#7f7fb5">
+         <font>
+            <Font name="Times New Roman Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="391.0" text="Off Day :" textFill="#7f7fb5">
+         <font>
+            <Font name="Times New Roman Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="trainName" layoutX="351.0" layoutY="111.0">
+         <font>
+            <Font name="Times New Roman Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="departureStation" layoutX="350.0" layoutY="164.0">
+         <font>
+            <Font name="Times New Roman Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="DestinationStation" layoutX="353.0" layoutY="221.0">
+         <font>
+            <Font name="Times New Roman Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="departureTime" layoutX="354.0" layoutY="278.0">
+         <font>
+            <Font name="Times New Roman Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="DestinationTime" layoutX="354.0" layoutY="336.0">
+         <font>
+            <Font name="Times New Roman Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="offDay" layoutX="354.0" layoutY="391.0">
+         <font>
+            <Font name="Times New Roman Bold" size="26.0" />
+         </font>
+      </Label>
+      <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="944.0" layoutY="558.0" onAction="#next" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #58148c;" text="next" textFill="#c99797">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="831.0" layoutY="559.0" onAction="#prev" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #58148c;" text="prev" textFill="#c99797">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
